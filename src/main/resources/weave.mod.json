@@ -1,0 +1,10 @@
+{
+  "mixinConfigs": [
+    "examplemod.mixins.json"
+  ],
+  "entrypoints": [
+    "com.example.ExampleMod"
+  ],
+  "hooks": [
+  ]
+}
