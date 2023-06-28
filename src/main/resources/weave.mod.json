@@ -6,5 +6,6 @@
     "com.example.ExampleMod"
   ],
   "hooks": [
+    "com.example.hook.MinecraftHook"
   ]
 }
