@@ -1,6 +1,6 @@
 plugins {
-    kotlin("jvm") version "1.8.21"
-    id("com.github.weave-mc.weave-gradle") version "649dba7468"
+    kotlin("jvm") version "1.9.22"
+    id("com.github.weave-mc.weave-gradle") version "fac948db7f"
 }
 
 group = "com.example"
@@ -14,11 +14,10 @@ repositories {
 }
 
 dependencies {
-    compileOnly("com.github.weave-mc:weave-loader:v0.2.4")
-
+    compileOnly("com.github.weave-mc:weave-loader:v0.2.5")
     compileOnly("org.spongepowered:mixin:0.8.5")
 }
 
-tasks.compileJava {
-    options.release.set(17)
+kotlin {
+    jvmToolchain(17)
 }
